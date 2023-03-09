@@ -143,6 +143,15 @@ namespace deleteAllFile
             if (ckbJournal.Checked) listDelete.Add(@"CreditNFC\transaction_data\Journal.dat");
             if (ckbtoPos.Checked) listDelete.Add(@"Pos\toPos.dat");
 
+            //Add UnionPay
+            if (ckbCancelMode.Checked) listDelete.Add(@"UnionPay\CancelMode.chk");
+            if (ckbLastOutputId.Checked) listDelete.Add(@"UnionPay\LastOutputId.dat");
+            if (ckbLastSettlementBrandCode.Checked) listDelete.Add(@"UnionPay\LastSettlementBrandCode.dat");
+            if (ckbLastSettlementSeqNo.Checked) listDelete.Add(@"UnionPay\LastSettlementSeqNo.dat");
+            if (ckbLastTransactionInquiry.Checked) listDelete.Add(@"UnionPay\LastTransactionInquiry.dat");
+            if (ckbJournal.Checked) listDelete.Add(@"UnionPay\transaction_data\Journal.dat");
+            if (ckbtoPos.Checked) listDelete.Add(@"Pos\toPos.dat");
+
             foreach (string file in listDelete)
             {
                 string filePath = folderPath +"\\"+ file;
