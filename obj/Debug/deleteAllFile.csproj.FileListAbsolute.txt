@@ -21,7 +21,6 @@ C:\Users\thinhngotony\Downloads\deleteAllFile\deleteAllFile\deleteAllFile\obj\De
 C:\Users\thinhngotony\Downloads\deleteAllFile\deleteAllFile\deleteAllFile\obj\Debug\deleteAllFile.csproj.CoreCompileInputs.cache
 C:\Users\thinhngotony\Downloads\deleteAllFile\deleteAllFile\deleteAllFile\obj\Debug\deleteAllFile.exe
 C:\Users\thinhngotony\Downloads\deleteAllFile\deleteAllFile\deleteAllFile\obj\Debug\deleteAllFile.pdb
-C:\Users\thinhngotony\Desktop\Reset-WPSaturnCredit\bin\Debug\EmoneyPath.ini
 C:\Users\thinhngotony\Desktop\Reset-WPSaturnCredit\bin\Debug\deleteAllFile.exe.config
 C:\Users\thinhngotony\Desktop\Reset-WPSaturnCredit\bin\Debug\deleteAllFile.exe
 C:\Users\thinhngotony\Desktop\Reset-WPSaturnCredit\bin\Debug\deleteAllFile.pdb
@@ -33,3 +32,4 @@ C:\Users\thinhngotony\Desktop\Reset-WPSaturnCredit\obj\Debug\deleteAllFile.cspro
 C:\Users\thinhngotony\Desktop\Reset-WPSaturnCredit\obj\Debug\deleteAllFile.csproj.CoreCompileInputs.cache
 C:\Users\thinhngotony\Desktop\Reset-WPSaturnCredit\obj\Debug\deleteAllFile.exe
 C:\Users\thinhngotony\Desktop\Reset-WPSaturnCredit\obj\Debug\deleteAllFile.pdb
+C:\Users\thinhngotony\Desktop\Reset-WPSaturnCredit\bin\Debug\Common\SourcePath.ini

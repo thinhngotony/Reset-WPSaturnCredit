@@ -21,7 +21,7 @@ namespace deleteAllFile
         public Form1()
         {
             InitializeComponent();
-            txtPath.Text = File.ReadAllText("EmoneyPath.ini");
+            txtPath.Text = File.ReadAllText("Common/SourcePath.ini");
             MonitorFile(txtPath.Text);
             timer1.Interval = Int32.Parse(txtAutoEnter.Text);
             timer1.Start();
