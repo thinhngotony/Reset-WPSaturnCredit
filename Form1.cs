@@ -150,7 +150,15 @@ namespace deleteAllFile
             if (ckbLastSettlementSeqNo.Checked) listDelete.Add(@"UnionPay\LastSettlementSeqNo.dat");
             if (ckbLastTransactionInquiry.Checked) listDelete.Add(@"UnionPay\LastTransactionInquiry.dat");
             if (ckbJournal.Checked) listDelete.Add(@"UnionPay\transaction_data\Journal.dat");
-            if (ckbtoPos.Checked) listDelete.Add(@"Pos\toPos.dat");
+
+
+            //Add QR Code
+            if (ckbCancelMode.Checked) listDelete.Add(@"QRPayment\CancelMode.chk");
+            if (ckbLastOutputId.Checked) listDelete.Add(@"QRPayment\LastOutputId.dat");
+            if (ckbLastSettlementBrandCode.Checked) listDelete.Add(@"QRPayment\LastSettlementBrandCode.dat");
+            if (ckbLastSettlementSeqNo.Checked) listDelete.Add(@"QRPayment\LastSettlementSeqNo.dat");
+            if (ckbLastTransactionInquiry.Checked) listDelete.Add(@"QRPayment\LastTransactionInquiry.dat");
+            if (ckbJournal.Checked) listDelete.Add(@"QRPayment\transaction_data\Journal.dat");
 
             foreach (string file in listDelete)
             {
