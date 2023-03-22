@@ -163,7 +163,8 @@ namespace deleteAllFile
             if (ckbLastPosTranNum.Checked) listDelete.Add(@"QRPayment\LastPosTranNum.dat");
             if (ckbLastSettlementServiceCode.Checked) listDelete.Add(@"QRPayment\LastSettlementServiceCode.dat");
             if (ckbLastTransactionSummaryId.Checked) listDelete.Add(@"QRPayment\LastTransactionSummaryId.dat");
-            if (ckbPTR.Checked) listDelete.AddRange(Directory.GetFiles("C:\\WEBPOS\\WPSaturnCredit\\Pos\\", "*.dat", SearchOption.AllDirectories));
+            //if (ckbPTR.Checked) listDelete.AddRange(Directory.GetFiles("C:\\WEBPOS\\WPSaturnCredit\\Pos\\", "*.dat", SearchOption.AllDirectories));
+            if (ckbPTR.Checked) listDelete.AddRange(Directory.GetFiles(folderPath + "\\\\" + "Pos\\", "*.dat", SearchOption.AllDirectories));
 
             Console.WriteLine("Files to delete: " + string.Join(", ", listDelete));
             foreach (string file in listDelete)
