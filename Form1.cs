@@ -160,12 +160,33 @@ namespace deleteAllFile
             if (ckbLastTransactionInquiry.Checked) listDelete.Add(@"QRPayment\LastTransactionInquiry.dat");
             if (ckbJournal.Checked) listDelete.Add(@"QRPayment\transaction_data\Journal.dat");
 
+            if (ckbLastPosTranNum.Checked) listDelete.Add(@"QRPayment\LastPosTranNum.dat");
+            if (ckbLastSettlementServiceCode.Checked) listDelete.Add(@"QRPayment\LastSettlementServiceCode.dat");
+            if (ckbLastTransactionSummaryId.Checked) listDelete.Add(@"QRPayment\LastTransactionSummaryId.dat");
+            if (ckbPTR.Checked) listDelete.AddRange(Directory.GetFiles("C:\\WEBPOS\\WPSaturnCredit\\Pos\\", "*.dat", SearchOption.AllDirectories));
+
+            Console.WriteLine("Files to delete: " + string.Join(", ", listDelete));
             foreach (string file in listDelete)
             {
-                string filePath = folderPath +"\\"+ file;
-                if (deleteFile(filePath)) txtDelete.AppendText(file + Environment.NewLine);
-                else txtNotFound.AppendText(file + Environment.NewLine);
+                Console.WriteLine(file);
             }
+
+
+            foreach (string file in listDelete)
+            {
+                string filePath = folderPath + "\\\\" + file;
+                Console.WriteLine("Deleting file: " + filePath);
+                if (deleteFile(filePath))
+                {
+                    txtDelete.AppendText(file + Environment.NewLine);
+                }
+                else
+                {
+                    deleteFile(file);
+                    txtNotFound.AppendText(file + Environment.NewLine);
+                }
+            }
+
 
             if (ckbLog.Checked)
             {

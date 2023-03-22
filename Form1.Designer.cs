@@ -54,6 +54,10 @@ namespace deleteAllFile
             this.txtAutoEnter = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.ckbWPSaturnCredit = new System.Windows.Forms.CheckBox();
+            this.ckbLastPosTranNum = new System.Windows.Forms.CheckBox();
+            this.ckbLastSettlementServiceCode = new System.Windows.Forms.CheckBox();
+            this.ckbLastTransactionSummaryId = new System.Windows.Forms.CheckBox();
+            this.ckbPTR = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnDelete
@@ -61,7 +65,7 @@ namespace deleteAllFile
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(12, 12);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(517, 65);
+            this.btnDelete.Size = new System.Drawing.Size(273, 65);
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "Reset";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -289,11 +293,63 @@ namespace deleteAllFile
             this.ckbWPSaturnCredit.Text = "WPSaturnCredit.exe";
             this.ckbWPSaturnCredit.UseVisualStyleBackColor = true;
             // 
+            // ckbLastPosTranNum
+            // 
+            this.ckbLastPosTranNum.AutoSize = true;
+            this.ckbLastPosTranNum.Checked = true;
+            this.ckbLastPosTranNum.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckbLastPosTranNum.Location = new System.Drawing.Point(300, 12);
+            this.ckbLastPosTranNum.Name = "ckbLastPosTranNum";
+            this.ckbLastPosTranNum.Size = new System.Drawing.Size(108, 17);
+            this.ckbLastPosTranNum.TabIndex = 24;
+            this.ckbLastPosTranNum.Text = "LastPosTranNum";
+            this.ckbLastPosTranNum.UseVisualStyleBackColor = true;
+            // 
+            // ckbLastSettlementServiceCode
+            // 
+            this.ckbLastSettlementServiceCode.AutoSize = true;
+            this.ckbLastSettlementServiceCode.Checked = true;
+            this.ckbLastSettlementServiceCode.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckbLastSettlementServiceCode.Location = new System.Drawing.Point(300, 37);
+            this.ckbLastSettlementServiceCode.Name = "ckbLastSettlementServiceCode";
+            this.ckbLastSettlementServiceCode.Size = new System.Drawing.Size(157, 17);
+            this.ckbLastSettlementServiceCode.TabIndex = 25;
+            this.ckbLastSettlementServiceCode.Text = "LastSettlementServiceCode";
+            this.ckbLastSettlementServiceCode.UseVisualStyleBackColor = true;
+            // 
+            // ckbLastTransactionSummaryId
+            // 
+            this.ckbLastTransactionSummaryId.AutoSize = true;
+            this.ckbLastTransactionSummaryId.Checked = true;
+            this.ckbLastTransactionSummaryId.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckbLastTransactionSummaryId.Location = new System.Drawing.Point(300, 62);
+            this.ckbLastTransactionSummaryId.Name = "ckbLastTransactionSummaryId";
+            this.ckbLastTransactionSummaryId.Size = new System.Drawing.Size(154, 17);
+            this.ckbLastTransactionSummaryId.TabIndex = 26;
+            this.ckbLastTransactionSummaryId.Text = "LastTransactionSummaryId";
+            this.ckbLastTransactionSummaryId.UseVisualStyleBackColor = true;
+            // 
+            // ckbPTR
+            // 
+            this.ckbPTR.AutoSize = true;
+            this.ckbPTR.Checked = true;
+            this.ckbPTR.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckbPTR.Location = new System.Drawing.Point(460, 12);
+            this.ckbPTR.Name = "ckbPTR";
+            this.ckbPTR.Size = new System.Drawing.Size(69, 17);
+            this.ckbPTR.TabIndex = 27;
+            this.ckbPTR.Text = "PTR files";
+            this.ckbPTR.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(707, 401);
+            this.Controls.Add(this.ckbPTR);
+            this.Controls.Add(this.ckbLastTransactionSummaryId);
+            this.Controls.Add(this.ckbLastSettlementServiceCode);
+            this.Controls.Add(this.ckbLastPosTranNum);
             this.Controls.Add(this.ckbWPSaturnCredit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAutoEnter);
@@ -349,6 +405,10 @@ namespace deleteAllFile
         private System.Windows.Forms.TextBox txtAutoEnter;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox ckbWPSaturnCredit;
+        private System.Windows.Forms.CheckBox ckbLastPosTranNum;
+        private System.Windows.Forms.CheckBox ckbLastSettlementServiceCode;
+        private System.Windows.Forms.CheckBox ckbLastTransactionSummaryId;
+        private System.Windows.Forms.CheckBox ckbPTR;
     }
 }
 
