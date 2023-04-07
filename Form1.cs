@@ -166,6 +166,16 @@ namespace deleteAllFile
             //if (ckbPTR.Checked) listDelete.AddRange(Directory.GetFiles("C:\\WEBPOS\\WPSaturnCredit\\Pos\\", "*.dat", SearchOption.AllDirectories));
             if (ckbPTR.Checked) listDelete.AddRange(Directory.GetFiles(folderPath + "\\\\" + "Pos\\", "*.dat", SearchOption.AllDirectories));
 
+
+            // Add Emoney
+            if (ckbCancelMode.Checked) listDelete.Add(@"CancelMode.chk");
+            if (ckbLastOutputId.Checked) listDelete.Add(@"LastOutputId.dat");
+            if (ckbLastSettlementBrandCode.Checked) listDelete.Add(@"LastSettlementBrandCode.dat");
+            if (ckbLastSettlementSeqNo.Checked) listDelete.Add(@"LastSettlementSeqNo.dat");
+            if (ckbLastTransactionInquiry.Checked) listDelete.Add(@"LastTransactionInquiry.dat");
+            if (ckbJournal.Checked) listDelete.Add(@"transaction_data\Journal.dat");
+            if (ckbtoPos.Checked) listDelete.Add(@"Pos\toPos.dat");
+
             Console.WriteLine("Files to delete: " + string.Join(", ", listDelete));
             foreach (string file in listDelete)
             {
