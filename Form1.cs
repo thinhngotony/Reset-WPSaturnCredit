@@ -138,6 +138,7 @@ namespace deleteAllFile
             if (ckbCancelMode.Checked) listDelete.Add(@"CreditNFC\CancelMode.chk");
             if (ckbLastOutputId.Checked) listDelete.Add(@"CreditNFC\LastOutputId.dat");
             if (ckbLastSettlementBrandCode.Checked) listDelete.Add(@"CreditNFC\LastSettlementBrandCode.dat");
+            if (ckbLastSettlementServiceCode.Checked) listDelete.Add(@"CreditNFC\LastSettlementServiceCode.dat");
             if (ckbLastSettlementSeqNo.Checked) listDelete.Add(@"CreditNFC\LastSettlementSeqNo.dat");
             if (ckbLastTransactionInquiry.Checked) listDelete.Add(@"CreditNFC\LastTransactionInquiry.dat");
             if (ckbJournal.Checked) listDelete.Add(@"CreditNFC\transaction_data\Journal.dat");
